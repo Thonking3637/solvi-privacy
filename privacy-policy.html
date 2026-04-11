@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvi - Pol&iacute;tica de Privacidad</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0B0F1A;
+            color: #E8ECF4;
+            line-height: 1.7;
+            padding: 24px;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        h1 {
+            font-size: 28px;
+            color: #10B981;
+            margin-bottom: 8px;
+        }
+        .updated {
+            font-size: 14px;
+            color: #8896AB;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #34D399;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            color: #C8D0DE;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 8px; }
+        strong { color: #E8ECF4; }
+        a { color: #10B981; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: #131A2B;
+            border-left: 3px solid #10B981;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #1B2438;
+            font-size: 13px;
+            color: #8896AB;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pol&iacute;tica de Privacidad</h1>
+        <p class="updated">&Uacute;ltima actualizaci&oacute;n: 9 de abril de 2026</p>
+
+        <p>Solvi es una aplicaci&oacute;n de finanzas personales que registra tus gastos autom&aacute;ticamente usando inteligencia artificial. Tu privacidad es nuestra prioridad.</p>
+
+        <div class="highlight">
+            <strong>Resumen:</strong> Todos tus datos financieros se almacenan exclusivamente en tu dispositivo. No tenemos servidores, no creamos cuentas de usuario, y no recopilamos informaci&oacute;n personal identificable.
+        </div>
+
+        <h2>1. Datos que recopilamos</h2>
+        <p>Solvi almacena los siguientes datos <strong>localmente en tu dispositivo</strong>:</p>
+        <ul>
+            <li><strong>Transacciones financieras:</strong> descripci&oacute;n, monto, moneda, categor&iacute;a, fecha y tarjeta asociada.</li>
+            <li><strong>Tarjetas de cr&eacute;dito:</strong> nombre personalizado, &uacute;ltimos 4 d&iacute;gitos, d&iacute;as de corte y pago. No almacenamos n&uacute;meros completos de tarjeta.</li>
+            <li><strong>Presupuestos y categor&iacute;as:</strong> l&iacute;mites de gasto y categor&iacute;as personalizadas.</li>
+            <li><strong>Planes de cuotas:</strong> compras en cuotas con montos y plazos.</li>
+            <li><strong>Preferencias:</strong> tema visual, nombre de usuario, configuraci&oacute;n de la app.</li>
+        </ul>
+
+        <h2>2. Captura autom&aacute;tica de gastos</h2>
+        <p>Si activas la captura autom&aacute;tica, la app lee notificaciones de apps bancarias para registrar gastos sin intervenci&oacute;n manual. Espec&iacute;ficamente:</p>
+        <ul>
+            <li>La app accede al <strong>t&iacute;tulo y texto</strong> de notificaciones de aplicaciones bancarias (BCP, Interbank, Scotiabank, Yape, Plin, Google Wallet).</li>
+            <li>El texto de la notificaci&oacute;n se env&iacute;a a <strong>Google Firebase AI (Gemini)</strong> para clasificaci&oacute;n inteligente.</li>
+            <li>La transacci&oacute;n clasificada se guarda localmente en tu dispositivo.</li>
+            <li>No almacenamos el texto original de las notificaciones de forma permanente.</li>
+        </ul>
+
+        <h2>3. Uso de inteligencia artificial</h2>
+        <p>Solvi utiliza <strong>Google Firebase AI (Gemini 2.5 Flash Lite)</strong> para:</p>
+        <ul>
+            <li>Clasificar notificaciones bancarias en categor&iacute;as de gasto.</li>
+            <li>Analizar estados de cuenta subidos por el usuario.</li>
+            <li>Responder consultas financieras en el consultor IA.</li>
+        </ul>
+        <p>Los datos enviados a Firebase AI son procesados seg&uacute;n la <a href="https://firebase.google.com/support/privacy" target="_blank">Pol&iacute;tica de Privacidad de Firebase</a>. Google no utiliza estos datos para entrenar modelos de IA.</p>
+
+        <h2>4. Datos compartidos con terceros</h2>
+        <ul>
+            <li><strong>Google Firebase AI:</strong> texto de notificaciones bancarias y consultas al asistente IA (para clasificaci&oacute;n y an&aacute;lisis).</li>
+            <li><strong>Google Play Billing:</strong> si adquieres una suscripci&oacute;n premium, Google procesa el pago. No tenemos acceso a tu informaci&oacute;n de pago.</li>
+        </ul>
+        <p><strong>No compartimos, vendemos ni transferimos tus datos financieros a ning&uacute;n otro tercero.</strong></p>
+
+        <h2>5. Almacenamiento y seguridad</h2>
+        <ul>
+            <li>Todos los datos se almacenan en una base de datos local (Room/SQLite) en tu dispositivo.</li>
+            <li><strong>No tenemos servidores</strong> que almacenen tus datos.</li>
+            <li><strong>No hay cuentas de usuario</strong> ni inicio de sesi&oacute;n.</li>
+            <li>Los datos est&aacute;n protegidos por la seguridad de tu dispositivo Android (cifrado de disco, bloqueo de pantalla).</li>
+            <li>La funci&oacute;n de exportar datos genera archivos locales que solo t&uacute; controlas.</li>
+        </ul>
+
+        <h2>6. Permisos de la aplicaci&oacute;n</h2>
+        <ul>
+            <li><strong>Internet:</strong> para comunicaci&oacute;n con Firebase AI.</li>
+            <li><strong>Acceso a notificaciones:</strong> para capturar gastos autom&aacute;ticamente (opcional, requiere activaci&oacute;n manual).</li>
+            <li><strong>Notificaciones push:</strong> para confirmar gastos capturados.</li>
+            <li><strong>Acceso a galer&iacute;a:</strong> para leer screenshots de estados de cuenta (opcional).</li>
+        </ul>
+
+        <h2>7. Tus derechos</h2>
+        <ul>
+            <li><strong>Eliminar todos tus datos:</strong> desinstala la app o borra sus datos desde Ajustes de Android.</li>
+            <li><strong>Exportar tus datos:</strong> usa la funci&oacute;n de exportar CSV o backup en Ajustes de la app.</li>
+            <li><strong>Revocar permisos:</strong> desactiva el acceso a notificaciones o galer&iacute;a en cualquier momento desde Ajustes de Android.</li>
+        </ul>
+
+        <h2>8. Menores de edad</h2>
+        <p>Solvi no est&aacute; dirigida a menores de 13 a&ntilde;os. No recopilamos intencionalmente datos de menores.</p>
+
+        <h2>9. Cambios a esta pol&iacute;tica</h2>
+        <p>Podemos actualizar esta pol&iacute;tica de privacidad ocasionalmente. Los cambios se publicar&aacute;n en esta p&aacute;gina con la fecha de actualizaci&oacute;n.</p>
+
+        <h2>10. Contacto</h2>
+        <p>Si tienes preguntas sobre esta pol&iacute;tica de privacidad, puedes contactarnos en:</p>
+        <p><strong>Email:</strong> <a href="mailto:thonking.dev@gmail.com">thonking.dev@gmail.com</a></p>
+
+        <div class="footer">
+            <p>&copy; 2026 Solvi. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
